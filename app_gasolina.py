@@ -3,9 +3,10 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-st.write('''# Aplicación para predecir el costo de gasolina en México <br/> G. de la Cruz A.''')
+st.write('''# Aplicación para predecir el costo de gasolina en México''')
 st.image("img1.jpg", caption="se empleo la base en datos de la CRE", width=450)
 
+st.header('G De La Cruz A.')
 st.header('Parametros para la predicción')
 
 # --- Cargar modelo y encoder ---
