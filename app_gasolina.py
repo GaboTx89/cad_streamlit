@@ -3,10 +3,10 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-st.write('''# Predicción del Precio de la Gasolina en México''')
-st.image("img1.jpg", caption="Predicción de precios con base en datos de la CRE", width=150)
+st.write('''# Aplicación para predecir el costo de gasolina en México <br/> G. de la Cruz A.''')
+st.image("img1.jpg", caption="se empleo la base en datos de la CRE", width=450)
 
-st.header('Selecciona los parámetros')
+st.header('Parametros para la predicción')
 
 # --- Cargar modelo y encoder ---
 modelo = joblib.load("modelo_gasolina.joblib")
@@ -28,6 +28,6 @@ entrada = np.concatenate([estado_encoded, [[año, mes]]], axis=1)
 # --- Predicción ---
 prediccion = modelo.predict(entrada)
 
-st.subheader('Precio estimado de la gasolina regular')
+st.subheader('Precio estimado de gasolina')
 st.write(f" **${prediccion[0]:.2f} MXN por litro**")
 
