@@ -4,7 +4,7 @@ import pandas as pd
 import joblib
 
 st.write('''# Predicción del Precio de la Gasolina en México''')
-st.image("Gasolina.jpg", caption="Predicción de precios con base en datos de la CRE", width=150)
+st.image("img1.jpg", caption="Predicción de precios con base en datos de la CRE", width=150)
 
 st.header('Selecciona los parámetros')
 
